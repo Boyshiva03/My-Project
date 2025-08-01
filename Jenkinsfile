@@ -11,10 +11,10 @@ pipeline {
   stages {
 
     stage('Checkout Source') {
-      steps {
-        git 'https://github.com/Boyshiva03/My-Project.git'
-      }
-    }
+  steps {
+    git branch: 'main', url: 'https://github.com/Boyshiva03/My-Project.git'
+  }
+}
 
     stage('Login to ECR') {
       steps {
